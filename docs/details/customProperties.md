@@ -20,6 +20,6 @@ add this line to the end of the file
 
 Save the file 
 
-Run the Transformation Advisor Data Collector
+Run the Application Modernization Accelerator Data Collector
 
 You can check that the Data Collector has scanned with the correct target by opening the analysis report and checking the target options. It should display --targetJava=java11

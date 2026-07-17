@@ -1,11 +1,11 @@
-# Using the Transformation Advisor Data Collector
+# Using the Application Modernization Accelerator Data Collector
 
- - The Transformation Advisor Data Collector (or DC for short) is used to collect information about all the Java applications in your estate
- - You can download the DC from the Transformation Advisor UI
+ - The Application Modernization Accelerator Data Collector (or DC for short) is used to collect information about all the Java applications in your estate
+ - You can download the DC from the Application Modernization Accelerator UI
  - It generates analysis for going to all three migration targets: WebSphere Liberty, Open Liberty, tWAS Base in Containers
  - It will generate a zip file for each WebSphere profile (or runtime equivalent) found and also one zip file for each shared library found
    - When scanning WebLogic, JBoss or Tomcat shared libraries will not be detected
- - These will be automatically uploaded to Transformation Advisor if an upload path is found
+ - These will be automatically uploaded to Application Modernization Accelerator if an upload path is found
  - If not then you will need to upload them via the [UI](https://ibm.github.io/app-mod-journey/details/uploadResultsManually) or in [bulk](https://ibm.github.io/app-mod-journey/details/bulkUploadResults)
 
 ## WebSphere Application Server
@@ -22,27 +22,27 @@
 
 `./bin/transformationadvisor -w WEBSPHERE_HOME_DIR`
 
-### Scan a WebSphere Application Server Profile and don't upload to Transformation Advisor
+### Scan a WebSphere Application Server Profile and don't upload to Application Modernization Accelerator
 
 
 `./bin/transformationadvisor -w WEBSPHERE_HOME_DIR -p PROFILE_NAME --no-upload`
 
-### Scan a WebSphere Application Server Profile and Transformation Advisor will skip the specified applications
+### Scan a WebSphere Application Server Profile and Application Modernization Accelerator will skip the specified applications
 
 
 `./bin/transformationadvisor -w WEBSPHERE_HOME_DIR -p PROFILE_NAME --skip-applications  app1 app2 app3`
 
-### Scan a WebSphere Application Server Profile and Transformation Advisor will skip the specified applications that are listed in a file
+### Scan a WebSphere Application Server Profile and Application Modernization Accelerator will skip the specified applications that are listed in a file
 
 
 `./bin/transformationadvisor -w WEBSPHERE_HOME_DIR -p PROFILE_NAME --skip-applications-file /tmp/applicationsToSkip.txt`
 
-### Scan a WebSphere Application Server Profile and Transformation Advisor will only scan the specified applications
+### Scan a WebSphere Application Server Profile and Application Modernization Accelerator will only scan the specified applications
 
 
 `./bin/transformationadvisor -w WEBSPHERE_HOME_DIR -p PROFILE_NAME --applications  app1 app2 app3`
 
-### Scan a WebSphere Application Server Profile and Transformation Advisor will only scan the specified applications that are listed in a file
+### Scan a WebSphere Application Server Profile and Application Modernization Accelerator will only scan the specified applications that are listed in a file
 
 
 `./bin/transformationadvisor -w WEBSPHERE_HOME_DIR -p PROFILE_NAME --applications-file /tmp/applicationsToScan.txt`
@@ -56,11 +56,11 @@
 
 `./bin/transformationadvisor -w WEBSPHERE_HOME_DIR -p PROFILE_NAME --ignore-missing-binary`
 
-### Scan a WebSphere Application Server Profile and Transformation Advisor will create a collection name specified
+### Scan a WebSphere Application Server Profile and Application Modernization Accelerator will create a collection name specified
 
 `./bin/transformationadvisor -w WEBSPHERE_HOME_DIR -p PROFILE_NAME --collection-name name1`
 
-### Scan a WebSphere Application Server Profile and specify the Transformation Advisor java
+### Scan a WebSphere Application Server Profile and specify the Application Modernization Accelerator java
 
 `./bin/transformationadvisor -w WEBSPHERE_HOME_DIR -p PROFILE_NAME --java-home jre`
 
