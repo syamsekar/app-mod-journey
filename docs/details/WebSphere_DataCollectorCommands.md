@@ -1,7 +1,7 @@
-# Using the Application Modernization Accelerator Data Collector
+# Using the Discovery Tool
 
- - The Application Modernization Accelerator Data Collector (or DC for short) is used to collect information about all the Java applications in your estate
- - You can download the DC from the Application Modernization Accelerator UI
+ - The Discovery Tool is used to collect information about all the Java applications in your estate
+ - You can download the Discovery Tool from the Application Modernization Accelerator UI
  - It generates analysis for going to all three migration targets: WebSphere Liberty, Open Liberty, tWAS Base in Containers
  - It will generate a zip file for each WebSphere profile (or runtime equivalent) found and also one zip file for each shared library found
    - When scanning WebLogic, JBoss or Tomcat shared libraries will not be detected
